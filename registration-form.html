@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+    </head>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+    <body>
+        <form id="registrationForm" action="/registration" method="post">
+            <h1>Create your account</h1>
+            <p>
+                <label for="email">Your email address</label>
+                <input id="email" type="email" name="email" placeholder="Email address" required/>
+            </p>
+            <p>
+                <label for="name">Your name</label>
+                <input id="name" type="text" name="name" placeholder="Name" required/>
+            </p>
+            <p>
+                <label for="password">Create your password</label>
+                <input id="password" type="password" name="password" placeholder="Password" required/>
+            </p>
+            <p>
+                <label for="termsCheckbox">
+                    I agree with
+                    <a href="/terms" target="_blank">Terms and Conditions</a>
+                    <input id="termsCheckbox" type="checkbox" name="agreeTerms" required/>
+                </label>
+            </p>
+        </form>
+        <button form="registrationForm" type="submit" name="signUpButton">
+            Sign Up
+        </button>
+    </body>
+</html>
